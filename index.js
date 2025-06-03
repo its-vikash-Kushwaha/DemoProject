@@ -9,7 +9,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Ejs App',message: 'Hello from EJS!' });
+    res.render('about', { title: 'Ejs App',message: 'Hello from EJS!' });
 });
 
 app.listen(3000, () => {
