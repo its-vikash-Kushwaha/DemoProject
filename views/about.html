@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - KIET Group of Institutions</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .about-section {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+        .about-title {
+            font-weight: 700;
+            color: #0d6efd;
+        }
+        .about-img {
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body>
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <!-- Carousel -->
+                    <div id="campusCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.kiet.edu/assets/images/kiet-campus.jpg" class="d-block w-100 about-img" alt="KIET Campus">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.kiet.edu/assets/images/kiet-library.jpg" class="d-block w-100 about-img" alt="KIET Library">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.kiet.edu/assets/images/kiet-lab.jpg" class="d-block w-100 about-img" alt="KIET Lab">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#campusCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#campusCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="about-title mb-3">About KIET Group of Institutions</h2>
+                    <p>
+                        Established in 1998, <strong>KIET Group of Institutions</strong> is a premier educational institution located in Ghaziabad, Uttar Pradesh. The institute is renowned for its commitment to academic excellence, innovation, and holistic development of students.
+                    </p>
+                    <p>
+                        KIET offers a wide range of undergraduate and postgraduate programs in Engineering, Management, Pharmacy, and other disciplines. With state-of-the-art infrastructure, experienced faculty, and a vibrant campus life, KIET empowers students to become industry-ready professionals and responsible citizens.
+                    </p>
+                    <ul>
+                        <li>Accredited by NAAC with Grade 'A+' and NBA</li>
+                        <li>Strong industry collaborations and placement record</li>
+                        <li>Focus on research, innovation, and entrepreneurship</li>
+                        <li>Active student clubs and extracurricular activities</li>
+                    </ul>
+                    <!-- Collapsible Vision & Mission -->
+                    <p>
+                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#visionMission" role="button" aria-expanded="false" aria-controls="visionMission">
+                            View Vision & Mission
+                        </a>
+                    </p>
+                    <div class="collapse" id="visionMission">
+                        <div class="card card-body mb-3">
+                            <strong>Vision:</strong> To be a center of excellence in technical and professional education, research, and innovation.<br>
+                            <strong>Mission:</strong> To impart quality education, foster research and innovation, and nurture responsible professionals for the betterment of society.
+                        </div>
+                    </div>
+                    <!-- Modal Trigger -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moreInfoModal">
+                        More About KIET
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="moreInfoModal" tabindex="-1" aria-labelledby="moreInfoModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="moreInfoModalLabel">More About KIET</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            KIET Group of Institutions is known for its vibrant campus life, excellent placement opportunities, and a strong alumni network. The institute regularly organizes workshops, seminars, and cultural events to ensure the holistic development of students.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
